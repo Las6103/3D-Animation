@@ -27,18 +27,18 @@ body {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
-.sneaker {
+.shoe{
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sneaker img {
+.shoe img {
   width: 20rem;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
-.circle {
+.shoe__bg {
   width: 15rem;
   height: 15rem;
   background: linear-gradient(
