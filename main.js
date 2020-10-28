@@ -7,11 +7,14 @@ const purchase = document.querySelector(".purchase");
 const description = document.querySelector(".info h3");
 const sizes = document.querySelector(".sizes");
 
+
+
 // Animation Event
 container.addEventListener("mousemove", (e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  
 });
 
 // Animate In
@@ -37,11 +40,14 @@ container.addEventListener("mouseleave", (e) => {
   purchase.style.transform = "translateZ(0px)";
 });
 
-let gyroscope = new Gyroscope({frequency: 60});
+// GyroScope
+// let gyroscope = new Gyroscope({frequency: 60});
 
-gyroscope.addEventListener('reading', e => {
-  console.log("Angular velocity along the X-axis " + gyroscope.x);
-  console.log("Angular velocity along the Y-axis " + gyroscope.y);
-  console.log("Angular velocity along the Z-axis " + gyroscope.z);
-});
-gyroscope.start();
+// gyroscope.addEventListener('reading', e => {
+//   console.log("Angular velocity along the X-axis " + gyroscope.x);
+//   console.log("Angular velocity along the Y-axis " + gyroscope.y);
+//   console.log("Angular velocity along the Z-axis " + gyroscope.z);
+//   title.innerHTML = `testing this shit ${gyroscope.x}`
+// });
+// gyroscope.start();
+
